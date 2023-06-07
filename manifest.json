@@ -3,7 +3,7 @@
     "dynamicImports": [
       "node_modules/workbox-window/build/workbox-window.prod.es5.mjs"
     ],
-    "file": "assets/virtual_pwa-register-00f15dcb.js",
+    "file": "assets/virtual_pwa-register-6234519f.js",
     "imports": [
       "index.html"
     ],
@@ -18,20 +18,20 @@
     "file": "assets/Loader-929180bd.css",
     "src": "Loader.css"
   },
-  "_EMTTitle-7c6ba93c.js": {
+  "_EMTTitle-59fef33d.js": {
     "css": [
       "assets/EMTTitle-6612a69f.css"
     ],
-    "file": "assets/EMTTitle-7c6ba93c.js",
+    "file": "assets/EMTTitle-59fef33d.js",
     "imports": [
       "index.html"
     ]
   },
-  "_Loader-0d57c91e.js": {
+  "_Loader-37339fd0.js": {
     "css": [
       "assets/Loader-929180bd.css"
     ],
-    "file": "assets/Loader-0d57c91e.js",
+    "file": "assets/Loader-37339fd0.js",
     "imports": [
       "index.html"
     ]
@@ -39,8 +39,8 @@
   "_Url-6980f45c.js": {
     "file": "assets/Url-6980f45c.js"
   },
-  "_howler-3eb97456.js": {
-    "file": "assets/howler-3eb97456.js",
+  "_howler-22e98101.js": {
+    "file": "assets/howler-22e98101.js",
     "imports": [
       "index.html"
     ],
@@ -73,7 +73,7 @@
       "src/views/pages/admin/dashboard/editContent.vue",
       "../../../@vite-plugin-pwa/virtual:pwa-register"
     ],
-    "file": "assets/main-d746bc0e.js",
+    "file": "assets/main-284d8624.js",
     "isEntry": true,
     "src": "index.html"
   },
@@ -169,7 +169,7 @@
     "css": [
       "assets/Admin-6597ba0d.css"
     ],
-    "file": "assets/Admin-5cd0a834.js",
+    "file": "assets/Admin-655d308e.js",
     "imports": [
       "index.html"
     ],
@@ -189,10 +189,10 @@
     "css": [
       "assets/User-dfb600b4.css"
     ],
-    "file": "assets/User-b71cfa1d.js",
+    "file": "assets/User-c61a843e.js",
     "imports": [
       "index.html",
-      "_EMTTitle-7c6ba93c.js"
+      "_EMTTitle-59fef33d.js"
     ],
     "isDynamicEntry": true,
     "src": "src/views/layouts/User.vue"
@@ -205,9 +205,9 @@
     "css": [
       "assets/Dashboard-0be9c926.css"
     ],
-    "file": "assets/Dashboard-8a383ba1.js",
+    "file": "assets/Dashboard-d105cfb1.js",
     "imports": [
-      "_EMTTitle-7c6ba93c.js",
+      "_EMTTitle-59fef33d.js",
       "index.html",
       "_Url-6980f45c.js"
     ],
@@ -225,17 +225,17 @@
     "css": [
       "assets/Login-94305be8.css"
     ],
-    "file": "assets/Login-27681f6c.js",
+    "file": "assets/Login-c3b1d8c6.js",
     "imports": [
-      "_Loader-0d57c91e.js",
-      "_EMTTitle-7c6ba93c.js",
+      "_Loader-37339fd0.js",
+      "_EMTTitle-59fef33d.js",
       "index.html"
     ],
     "isDynamicEntry": true,
     "src": "src/views/pages/admin/auth/Login.vue"
   },
   "src/views/pages/admin/auth/Registration.vue": {
-    "file": "assets/Registration-3a01cfa5.js",
+    "file": "assets/Registration-37d484bd.js",
     "imports": [
       "index.html"
     ],
@@ -243,17 +243,17 @@
     "src": "src/views/pages/admin/auth/Registration.vue"
   },
   "src/views/pages/admin/dashboard/ManageContent.css": {
-    "file": "assets/ManageContent-1eb14ab8.css",
+    "file": "assets/ManageContent-f9b81ba3.css",
     "src": "src/views/pages/admin/dashboard/ManageContent.css"
   },
   "src/views/pages/admin/dashboard/ManageContent.vue": {
     "css": [
-      "assets/ManageContent-1eb14ab8.css"
+      "assets/ManageContent-f9b81ba3.css"
     ],
-    "file": "assets/ManageContent-bcf744f0.js",
+    "file": "assets/ManageContent-b7890746.js",
     "imports": [
       "index.html",
-      "_Loader-0d57c91e.js",
+      "_Loader-37339fd0.js",
       "_Url-6980f45c.js"
     ],
     "isDynamicEntry": true,
@@ -267,7 +267,7 @@
     "css": [
       "assets/editContent-9c4db41b.css"
     ],
-    "file": "assets/editContent-1b957c36.js",
+    "file": "assets/editContent-42a4b75f.js",
     "imports": [
       "index.html"
     ],
@@ -282,10 +282,10 @@
     "css": [
       "assets/GetStarted-a7eee66d.css"
     ],
-    "file": "assets/GetStarted-88c55a88.js",
+    "file": "assets/GetStarted-05ace86d.js",
     "imports": [
-      "_Loader-0d57c91e.js",
-      "_EMTTitle-7c6ba93c.js",
+      "_Loader-37339fd0.js",
+      "_EMTTitle-59fef33d.js",
       "index.html"
     ],
     "isDynamicEntry": true,
@@ -302,9 +302,9 @@
     "css": [
       "assets/Landing-97de1607.css"
     ],
-    "file": "assets/Landing-5b1549ec.js",
+    "file": "assets/Landing-f956380b.js",
     "imports": [
-      "_EMTTitle-7c6ba93c.js",
+      "_EMTTitle-59fef33d.js",
       "index.html"
     ],
     "isDynamicEntry": true,
@@ -322,11 +322,11 @@
       "assets/Menu-7994390b.css"
     ],
     "dynamicImports": [
-      "_howler-3eb97456.js"
+      "_howler-22e98101.js"
     ],
-    "file": "assets/Menu-60974bfd.js",
+    "file": "assets/Menu-837d6c55.js",
     "imports": [
-      "_EMTTitle-7c6ba93c.js",
+      "_EMTTitle-59fef33d.js",
       "index.html",
       "_Url-6980f45c.js"
     ],
@@ -344,7 +344,7 @@
     "css": [
       "assets/Play-e8617e92.css"
     ],
-    "file": "assets/Play-528cddbb.js",
+    "file": "assets/Play-c06567af.js",
     "imports": [
       "index.html",
       "_Url-6980f45c.js"
