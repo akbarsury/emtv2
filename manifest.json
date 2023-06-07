@@ -1,37 +1,13 @@
 {
-  "../../../@vite-plugin-pwa/virtual:pwa-register": {
-    "dynamicImports": [
-      "node_modules/workbox-window/build/workbox-window.prod.es5.mjs"
-    ],
-    "file": "assets/virtual_pwa-register-4258b7d7.js",
-    "imports": [
-      "index.html"
-    ],
-    "isDynamicEntry": true,
-    "src": "../../../@vite-plugin-pwa/virtual:pwa-register"
-  },
   "EMTTitle.css": {
     "file": "assets/EMTTitle-6612a69f.css",
     "src": "EMTTitle.css"
   },
-  "Loader.css": {
-    "file": "assets/Loader-929180bd.css",
-    "src": "Loader.css"
-  },
-  "_EMTTitle-7440b610.js": {
+  "_EMTTitle-78f3ad7e.js": {
     "css": [
       "assets/EMTTitle-6612a69f.css"
     ],
-    "file": "assets/EMTTitle-7440b610.js",
-    "imports": [
-      "index.html"
-    ]
-  },
-  "_Loader-46ee5933.js": {
-    "css": [
-      "assets/Loader-929180bd.css"
-    ],
-    "file": "assets/Loader-46ee5933.js",
+    "file": "assets/EMTTitle-78f3ad7e.js",
     "imports": [
       "index.html"
     ]
@@ -39,15 +15,15 @@
   "_Url-6980f45c.js": {
     "file": "assets/Url-6980f45c.js"
   },
-  "_howler-cda5ffbc.js": {
-    "file": "assets/howler-cda5ffbc.js",
+  "_howler-d489b10b.js": {
+    "file": "assets/howler-d489b10b.js",
     "imports": [
       "index.html"
     ],
     "isDynamicEntry": true
   },
   "index.css": {
-    "file": "assets/index-45fcf2e5.css",
+    "file": "assets/index-8f36f288.css",
     "src": "index.css"
   },
   "index.html": {
@@ -56,9 +32,10 @@
       "assets/emt-a5eecabf.png"
     ],
     "css": [
-      "assets/index-45fcf2e5.css"
+      "assets/index-8f36f288.css"
     ],
     "dynamicImports": [
+      "node_modules/workbox-window/build/workbox-window.prod.es5.mjs",
       "src/views/layouts/User.vue",
       "src/views/pages/user/auth/Landing.vue",
       "src/views/pages/user/auth/GetStarted.vue",
@@ -70,10 +47,9 @@
       "src/views/pages/admin/auth/Registration.vue",
       "src/views/layouts/admin/Dashboard.vue",
       "src/views/pages/admin/dashboard/ManageContent.vue",
-      "src/views/pages/admin/dashboard/editContent.vue",
-      "../../../@vite-plugin-pwa/virtual:pwa-register"
+      "src/views/pages/admin/dashboard/editContent.vue"
     ],
-    "file": "assets/main-b6bc1d5e.js",
+    "file": "assets/main-8c024da0.js",
     "isEntry": true,
     "src": "index.html"
   },
@@ -144,11 +120,11 @@
   },
   "src/assets/images/splash/coverIlustration.png": {
     "file": "assets/emt-a5eecabf.png",
-    "src": "src/assets/images/splash/coverIlustration.png"
+    "src": "src/assets/images/splash/emt.png"
   },
   "src/assets/images/splash/emt.png": {
     "file": "assets/emt-a5eecabf.png",
-    "src": "src/assets/images/splash/coverIlustration.png"
+    "src": "src/assets/images/splash/emt.png"
   },
   "src/assets/images/splash/loka.dev-light.png": {
     "file": "assets/loka.dev-light-db9eaf19.png",
@@ -169,7 +145,7 @@
     "css": [
       "assets/Admin-6597ba0d.css"
     ],
-    "file": "assets/Admin-d88f4e11.js",
+    "file": "assets/Admin-9ab6d226.js",
     "imports": [
       "index.html"
     ],
@@ -177,7 +153,7 @@
     "src": "src/views/layouts/Admin.vue"
   },
   "src/views/layouts/User.css": {
-    "file": "assets/User-dfb600b4.css",
+    "file": "assets/User-9691c710.css",
     "src": "src/views/layouts/User.css"
   },
   "src/views/layouts/User.vue": {
@@ -187,12 +163,12 @@
       "assets/AppBackgroundPattern-187e7936.png"
     ],
     "css": [
-      "assets/User-dfb600b4.css"
+      "assets/User-9691c710.css"
     ],
-    "file": "assets/User-a71ed004.js",
+    "file": "assets/User-edbe1c70.js",
     "imports": [
       "index.html",
-      "_EMTTitle-7440b610.js"
+      "_EMTTitle-78f3ad7e.js"
     ],
     "isDynamicEntry": true,
     "src": "src/views/layouts/User.vue"
@@ -205,9 +181,9 @@
     "css": [
       "assets/Dashboard-0be9c926.css"
     ],
-    "file": "assets/Dashboard-260d6bba.js",
+    "file": "assets/Dashboard-9252a661.js",
     "imports": [
-      "_EMTTitle-7440b610.js",
+      "_EMTTitle-78f3ad7e.js",
       "index.html",
       "_Url-6980f45c.js"
     ],
@@ -225,17 +201,16 @@
     "css": [
       "assets/Login-94305be8.css"
     ],
-    "file": "assets/Login-c3a2aa9b.js",
+    "file": "assets/Login-50f7aaab.js",
     "imports": [
-      "_Loader-46ee5933.js",
-      "_EMTTitle-7440b610.js",
-      "index.html"
+      "index.html",
+      "_EMTTitle-78f3ad7e.js"
     ],
     "isDynamicEntry": true,
     "src": "src/views/pages/admin/auth/Login.vue"
   },
   "src/views/pages/admin/auth/Registration.vue": {
-    "file": "assets/Registration-6ad971c6.js",
+    "file": "assets/Registration-e83c881c.js",
     "imports": [
       "index.html"
     ],
@@ -243,17 +218,16 @@
     "src": "src/views/pages/admin/auth/Registration.vue"
   },
   "src/views/pages/admin/dashboard/ManageContent.css": {
-    "file": "assets/ManageContent-11616439.css",
+    "file": "assets/ManageContent-68e6d215.css",
     "src": "src/views/pages/admin/dashboard/ManageContent.css"
   },
   "src/views/pages/admin/dashboard/ManageContent.vue": {
     "css": [
-      "assets/ManageContent-11616439.css"
+      "assets/ManageContent-68e6d215.css"
     ],
-    "file": "assets/ManageContent-25e58204.js",
+    "file": "assets/ManageContent-490a34d1.js",
     "imports": [
       "index.html",
-      "_Loader-46ee5933.js",
       "_Url-6980f45c.js"
     ],
     "isDynamicEntry": true,
@@ -267,7 +241,7 @@
     "css": [
       "assets/editContent-c8e6af0f.css"
     ],
-    "file": "assets/editContent-002e91c3.js",
+    "file": "assets/editContent-a7011dbb.js",
     "imports": [
       "index.html"
     ],
@@ -275,18 +249,17 @@
     "src": "src/views/pages/admin/dashboard/editContent.vue"
   },
   "src/views/pages/user/auth/GetStarted.css": {
-    "file": "assets/GetStarted-a7eee66d.css",
+    "file": "assets/GetStarted-3cc8dd8b.css",
     "src": "src/views/pages/user/auth/GetStarted.css"
   },
   "src/views/pages/user/auth/GetStarted.vue": {
     "css": [
-      "assets/GetStarted-a7eee66d.css"
+      "assets/GetStarted-3cc8dd8b.css"
     ],
-    "file": "assets/GetStarted-b5be9a7e.js",
+    "file": "assets/GetStarted-ba38fb22.js",
     "imports": [
-      "_Loader-46ee5933.js",
-      "_EMTTitle-7440b610.js",
-      "index.html"
+      "index.html",
+      "_EMTTitle-78f3ad7e.js"
     ],
     "isDynamicEntry": true,
     "src": "src/views/pages/user/auth/GetStarted.vue"
@@ -302,9 +275,9 @@
     "css": [
       "assets/Landing-97de1607.css"
     ],
-    "file": "assets/Landing-0182d36d.js",
+    "file": "assets/Landing-5964108b.js",
     "imports": [
-      "_EMTTitle-7440b610.js",
+      "_EMTTitle-78f3ad7e.js",
       "index.html"
     ],
     "isDynamicEntry": true,
@@ -322,11 +295,11 @@
       "assets/Menu-7994390b.css"
     ],
     "dynamicImports": [
-      "_howler-cda5ffbc.js"
+      "_howler-d489b10b.js"
     ],
-    "file": "assets/Menu-2221543d.js",
+    "file": "assets/Menu-2cea0dc3.js",
     "imports": [
-      "_EMTTitle-7440b610.js",
+      "_EMTTitle-78f3ad7e.js",
       "index.html",
       "_Url-6980f45c.js"
     ],
@@ -334,7 +307,7 @@
     "src": "src/views/pages/user/gamePlay/Menu.vue"
   },
   "src/views/pages/user/gamePlay/Play.css": {
-    "file": "assets/Play-ce1c5555.css",
+    "file": "assets/Play-e7ea10d0.css",
     "src": "src/views/pages/user/gamePlay/Play.css"
   },
   "src/views/pages/user/gamePlay/Play.vue": {
@@ -342,9 +315,9 @@
       "assets/writing-31c0774b.png"
     ],
     "css": [
-      "assets/Play-ce1c5555.css"
+      "assets/Play-e7ea10d0.css"
     ],
-    "file": "assets/Play-e9cc9696.js",
+    "file": "assets/Play-ec6b6ccf.js",
     "imports": [
       "index.html",
       "_Url-6980f45c.js"
