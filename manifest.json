@@ -3,7 +3,7 @@
     "dynamicImports": [
       "node_modules/workbox-window/build/workbox-window.prod.es5.mjs"
     ],
-    "file": "assets/virtual_pwa-register-1dca873a.js",
+    "file": "assets/virtual_pwa-register-4258b7d7.js",
     "imports": [
       "index.html"
     ],
@@ -18,20 +18,20 @@
     "file": "assets/Loader-929180bd.css",
     "src": "Loader.css"
   },
-  "_EMTTitle-07695c69.js": {
+  "_EMTTitle-7440b610.js": {
     "css": [
       "assets/EMTTitle-6612a69f.css"
     ],
-    "file": "assets/EMTTitle-07695c69.js",
+    "file": "assets/EMTTitle-7440b610.js",
     "imports": [
       "index.html"
     ]
   },
-  "_Loader-bbe06be2.js": {
+  "_Loader-46ee5933.js": {
     "css": [
       "assets/Loader-929180bd.css"
     ],
-    "file": "assets/Loader-bbe06be2.js",
+    "file": "assets/Loader-46ee5933.js",
     "imports": [
       "index.html"
     ]
@@ -39,8 +39,8 @@
   "_Url-6980f45c.js": {
     "file": "assets/Url-6980f45c.js"
   },
-  "_howler-7eb0ec3f.js": {
-    "file": "assets/howler-7eb0ec3f.js",
+  "_howler-cda5ffbc.js": {
+    "file": "assets/howler-cda5ffbc.js",
     "imports": [
       "index.html"
     ],
@@ -73,7 +73,7 @@
       "src/views/pages/admin/dashboard/editContent.vue",
       "../../../@vite-plugin-pwa/virtual:pwa-register"
     ],
-    "file": "assets/main-545820b8.js",
+    "file": "assets/main-b6bc1d5e.js",
     "isEntry": true,
     "src": "index.html"
   },
@@ -144,11 +144,11 @@
   },
   "src/assets/images/splash/coverIlustration.png": {
     "file": "assets/emt-a5eecabf.png",
-    "src": "src/assets/images/splash/emt.png"
+    "src": "src/assets/images/splash/coverIlustration.png"
   },
   "src/assets/images/splash/emt.png": {
     "file": "assets/emt-a5eecabf.png",
-    "src": "src/assets/images/splash/emt.png"
+    "src": "src/assets/images/splash/coverIlustration.png"
   },
   "src/assets/images/splash/loka.dev-light.png": {
     "file": "assets/loka.dev-light-db9eaf19.png",
@@ -169,7 +169,7 @@
     "css": [
       "assets/Admin-6597ba0d.css"
     ],
-    "file": "assets/Admin-a074c823.js",
+    "file": "assets/Admin-d88f4e11.js",
     "imports": [
       "index.html"
     ],
@@ -189,10 +189,10 @@
     "css": [
       "assets/User-dfb600b4.css"
     ],
-    "file": "assets/User-92106a9d.js",
+    "file": "assets/User-a71ed004.js",
     "imports": [
       "index.html",
-      "_EMTTitle-07695c69.js"
+      "_EMTTitle-7440b610.js"
     ],
     "isDynamicEntry": true,
     "src": "src/views/layouts/User.vue"
@@ -205,9 +205,9 @@
     "css": [
       "assets/Dashboard-0be9c926.css"
     ],
-    "file": "assets/Dashboard-8f875ea6.js",
+    "file": "assets/Dashboard-260d6bba.js",
     "imports": [
-      "_EMTTitle-07695c69.js",
+      "_EMTTitle-7440b610.js",
       "index.html",
       "_Url-6980f45c.js"
     ],
@@ -225,17 +225,17 @@
     "css": [
       "assets/Login-94305be8.css"
     ],
-    "file": "assets/Login-11251d2c.js",
+    "file": "assets/Login-c3a2aa9b.js",
     "imports": [
-      "_Loader-bbe06be2.js",
-      "_EMTTitle-07695c69.js",
+      "_Loader-46ee5933.js",
+      "_EMTTitle-7440b610.js",
       "index.html"
     ],
     "isDynamicEntry": true,
     "src": "src/views/pages/admin/auth/Login.vue"
   },
   "src/views/pages/admin/auth/Registration.vue": {
-    "file": "assets/Registration-62768512.js",
+    "file": "assets/Registration-6ad971c6.js",
     "imports": [
       "index.html"
     ],
@@ -243,31 +243,31 @@
     "src": "src/views/pages/admin/auth/Registration.vue"
   },
   "src/views/pages/admin/dashboard/ManageContent.css": {
-    "file": "assets/ManageContent-eefac5c1.css",
+    "file": "assets/ManageContent-11616439.css",
     "src": "src/views/pages/admin/dashboard/ManageContent.css"
   },
   "src/views/pages/admin/dashboard/ManageContent.vue": {
     "css": [
-      "assets/ManageContent-eefac5c1.css"
+      "assets/ManageContent-11616439.css"
     ],
-    "file": "assets/ManageContent-6108d9d7.js",
+    "file": "assets/ManageContent-25e58204.js",
     "imports": [
       "index.html",
-      "_Loader-bbe06be2.js",
+      "_Loader-46ee5933.js",
       "_Url-6980f45c.js"
     ],
     "isDynamicEntry": true,
     "src": "src/views/pages/admin/dashboard/ManageContent.vue"
   },
   "src/views/pages/admin/dashboard/editContent.css": {
-    "file": "assets/editContent-ca410864.css",
+    "file": "assets/editContent-c8e6af0f.css",
     "src": "src/views/pages/admin/dashboard/editContent.css"
   },
   "src/views/pages/admin/dashboard/editContent.vue": {
     "css": [
-      "assets/editContent-ca410864.css"
+      "assets/editContent-c8e6af0f.css"
     ],
-    "file": "assets/editContent-3175d4dc.js",
+    "file": "assets/editContent-002e91c3.js",
     "imports": [
       "index.html"
     ],
@@ -282,10 +282,10 @@
     "css": [
       "assets/GetStarted-a7eee66d.css"
     ],
-    "file": "assets/GetStarted-adb8510c.js",
+    "file": "assets/GetStarted-b5be9a7e.js",
     "imports": [
-      "_Loader-bbe06be2.js",
-      "_EMTTitle-07695c69.js",
+      "_Loader-46ee5933.js",
+      "_EMTTitle-7440b610.js",
       "index.html"
     ],
     "isDynamicEntry": true,
@@ -302,9 +302,9 @@
     "css": [
       "assets/Landing-97de1607.css"
     ],
-    "file": "assets/Landing-f42edf2e.js",
+    "file": "assets/Landing-0182d36d.js",
     "imports": [
-      "_EMTTitle-07695c69.js",
+      "_EMTTitle-7440b610.js",
       "index.html"
     ],
     "isDynamicEntry": true,
@@ -322,11 +322,11 @@
       "assets/Menu-7994390b.css"
     ],
     "dynamicImports": [
-      "_howler-7eb0ec3f.js"
+      "_howler-cda5ffbc.js"
     ],
-    "file": "assets/Menu-5bb1029f.js",
+    "file": "assets/Menu-2221543d.js",
     "imports": [
-      "_EMTTitle-07695c69.js",
+      "_EMTTitle-7440b610.js",
       "index.html",
       "_Url-6980f45c.js"
     ],
@@ -334,7 +334,7 @@
     "src": "src/views/pages/user/gamePlay/Menu.vue"
   },
   "src/views/pages/user/gamePlay/Play.css": {
-    "file": "assets/Play-2085baeb.css",
+    "file": "assets/Play-ce1c5555.css",
     "src": "src/views/pages/user/gamePlay/Play.css"
   },
   "src/views/pages/user/gamePlay/Play.vue": {
@@ -342,9 +342,9 @@
       "assets/writing-31c0774b.png"
     ],
     "css": [
-      "assets/Play-2085baeb.css"
+      "assets/Play-ce1c5555.css"
     ],
-    "file": "assets/Play-af36b6e6.js",
+    "file": "assets/Play-e9cc9696.js",
     "imports": [
       "index.html",
       "_Url-6980f45c.js"
