@@ -1,1 +1,0 @@
-{"version":3,"file":"Registration-dbb69378.js","sources":["../../src/views/pages/admin/auth/Registration.vue"],"sourcesContent":["<template>\r\n  <div>Your Acoount must be activated</div>\r\n</template>\r\n\r\n<script setup lang=\"ts\"></script>\r\n\r\n<style scoped></style>\r\n"],"names":["_sfc_render","_ctx","_cache"],"mappings":"2DACE,SAAAA,EAAAC,EAAAC,EAAA"}
