@@ -3,11 +3,11 @@
     "file": "assets/EMTTitle-6612a69f.css",
     "src": "EMTTitle.css"
   },
-  "_EMTTitle-78f3ad7e.js": {
+  "_EMTTitle-11c512fd.js": {
     "css": [
       "assets/EMTTitle-6612a69f.css"
     ],
-    "file": "assets/EMTTitle-78f3ad7e.js",
+    "file": "assets/EMTTitle-11c512fd.js",
     "imports": [
       "index.html"
     ]
@@ -15,8 +15,8 @@
   "_Url-6980f45c.js": {
     "file": "assets/Url-6980f45c.js"
   },
-  "_howler-d489b10b.js": {
-    "file": "assets/howler-d489b10b.js",
+  "_howler-7a35bdb0.js": {
+    "file": "assets/howler-7a35bdb0.js",
     "imports": [
       "index.html"
     ],
@@ -49,7 +49,7 @@
       "src/views/pages/admin/dashboard/ManageContent.vue",
       "src/views/pages/admin/dashboard/editContent.vue"
     ],
-    "file": "assets/main-8c024da0.js",
+    "file": "assets/main-18685029.js",
     "isEntry": true,
     "src": "index.html"
   },
@@ -120,11 +120,11 @@
   },
   "src/assets/images/splash/coverIlustration.png": {
     "file": "assets/emt-a5eecabf.png",
-    "src": "src/assets/images/splash/emt.png"
+    "src": "src/assets/images/splash/coverIlustration.png"
   },
   "src/assets/images/splash/emt.png": {
     "file": "assets/emt-a5eecabf.png",
-    "src": "src/assets/images/splash/emt.png"
+    "src": "src/assets/images/splash/coverIlustration.png"
   },
   "src/assets/images/splash/loka.dev-light.png": {
     "file": "assets/loka.dev-light-db9eaf19.png",
@@ -145,7 +145,7 @@
     "css": [
       "assets/Admin-6597ba0d.css"
     ],
-    "file": "assets/Admin-9ab6d226.js",
+    "file": "assets/Admin-1e00aedf.js",
     "imports": [
       "index.html"
     ],
@@ -165,10 +165,10 @@
     "css": [
       "assets/User-9691c710.css"
     ],
-    "file": "assets/User-edbe1c70.js",
+    "file": "assets/User-8570ea56.js",
     "imports": [
       "index.html",
-      "_EMTTitle-78f3ad7e.js"
+      "_EMTTitle-11c512fd.js"
     ],
     "isDynamicEntry": true,
     "src": "src/views/layouts/User.vue"
@@ -181,9 +181,9 @@
     "css": [
       "assets/Dashboard-0be9c926.css"
     ],
-    "file": "assets/Dashboard-9252a661.js",
+    "file": "assets/Dashboard-122b6698.js",
     "imports": [
-      "_EMTTitle-78f3ad7e.js",
+      "_EMTTitle-11c512fd.js",
       "index.html",
       "_Url-6980f45c.js"
     ],
@@ -201,16 +201,16 @@
     "css": [
       "assets/Login-94305be8.css"
     ],
-    "file": "assets/Login-50f7aaab.js",
+    "file": "assets/Login-a24de7e4.js",
     "imports": [
       "index.html",
-      "_EMTTitle-78f3ad7e.js"
+      "_EMTTitle-11c512fd.js"
     ],
     "isDynamicEntry": true,
     "src": "src/views/pages/admin/auth/Login.vue"
   },
   "src/views/pages/admin/auth/Registration.vue": {
-    "file": "assets/Registration-e83c881c.js",
+    "file": "assets/Registration-6b1fa3cc.js",
     "imports": [
       "index.html"
     ],
@@ -225,7 +225,7 @@
     "css": [
       "assets/ManageContent-68e6d215.css"
     ],
-    "file": "assets/ManageContent-490a34d1.js",
+    "file": "assets/ManageContent-76bad337.js",
     "imports": [
       "index.html",
       "_Url-6980f45c.js"
@@ -241,7 +241,7 @@
     "css": [
       "assets/editContent-c8e6af0f.css"
     ],
-    "file": "assets/editContent-a7011dbb.js",
+    "file": "assets/editContent-f39b1834.js",
     "imports": [
       "index.html"
     ],
@@ -256,10 +256,10 @@
     "css": [
       "assets/GetStarted-3cc8dd8b.css"
     ],
-    "file": "assets/GetStarted-ba38fb22.js",
+    "file": "assets/GetStarted-57b7d4d8.js",
     "imports": [
       "index.html",
-      "_EMTTitle-78f3ad7e.js"
+      "_EMTTitle-11c512fd.js"
     ],
     "isDynamicEntry": true,
     "src": "src/views/pages/user/auth/GetStarted.vue"
@@ -275,9 +275,9 @@
     "css": [
       "assets/Landing-97de1607.css"
     ],
-    "file": "assets/Landing-5964108b.js",
+    "file": "assets/Landing-24dd5cc2.js",
     "imports": [
-      "_EMTTitle-78f3ad7e.js",
+      "_EMTTitle-11c512fd.js",
       "index.html"
     ],
     "isDynamicEntry": true,
@@ -295,11 +295,11 @@
       "assets/Menu-7994390b.css"
     ],
     "dynamicImports": [
-      "_howler-d489b10b.js"
+      "_howler-7a35bdb0.js"
     ],
-    "file": "assets/Menu-2cea0dc3.js",
+    "file": "assets/Menu-e969e578.js",
     "imports": [
-      "_EMTTitle-78f3ad7e.js",
+      "_EMTTitle-11c512fd.js",
       "index.html",
       "_Url-6980f45c.js"
     ],
@@ -317,7 +317,7 @@
     "css": [
       "assets/Play-e7ea10d0.css"
     ],
-    "file": "assets/Play-ec6b6ccf.js",
+    "file": "assets/Play-32d5fda4.js",
     "imports": [
       "index.html",
       "_Url-6980f45c.js"
