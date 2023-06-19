@@ -3,17 +3,17 @@
     "file": "assets/EMTTitle-6612a69f.css",
     "src": "EMTTitle.css"
   },
-  "_AppStorage-f0e0e685.js": {
-    "file": "assets/AppStorage-f0e0e685.js",
+  "_AppStorage-59a68013.js": {
+    "file": "assets/AppStorage-59a68013.js",
     "imports": [
       "index.html"
     ]
   },
-  "_EMTTitle-f0715a4a.js": {
+  "_EMTTitle-5ec395d4.js": {
     "css": [
       "assets/EMTTitle-6612a69f.css"
     ],
-    "file": "assets/EMTTitle-f0715a4a.js",
+    "file": "assets/EMTTitle-5ec395d4.js",
     "imports": [
       "index.html"
     ]
@@ -45,11 +45,10 @@
       "src/views/pages/admin/auth/Login.vue",
       "src/views/pages/admin/auth/Registration.vue",
       "src/views/layouts/admin/Dashboard.vue",
-      "src/views/pages/admin/dashboard/StudentDetail.vue",
       "src/views/pages/admin/dashboard/ManageContent.vue",
       "src/views/pages/admin/dashboard/editContent.vue"
     ],
-    "file": "assets/main-5c4f8fb3.js",
+    "file": "assets/main-e0264e12.js",
     "isEntry": true,
     "src": "index.html"
   },
@@ -141,7 +140,7 @@
     "css": [
       "assets/Admin-6597ba0d.css"
     ],
-    "file": "assets/Admin-64ef5ddb.js",
+    "file": "assets/Admin-1662c425.js",
     "imports": [
       "index.html"
     ],
@@ -161,11 +160,11 @@
     "css": [
       "assets/User-34ea80a8.css"
     ],
-    "file": "assets/User-347a99d3.js",
+    "file": "assets/User-ea6a3e32.js",
     "imports": [
       "index.html",
       "_Url-4d04c3c7.js",
-      "_EMTTitle-f0715a4a.js"
+      "_EMTTitle-5ec395d4.js"
     ],
     "isDynamicEntry": true,
     "src": "src/views/layouts/User.vue"
@@ -178,9 +177,9 @@
     "css": [
       "assets/Dashboard-0be9c926.css"
     ],
-    "file": "assets/Dashboard-6a96964e.js",
+    "file": "assets/Dashboard-ff69689a.js",
     "imports": [
-      "_EMTTitle-f0715a4a.js",
+      "_EMTTitle-5ec395d4.js",
       "index.html",
       "_Url-4d04c3c7.js"
     ],
@@ -198,16 +197,16 @@
     "css": [
       "assets/Login-94305be8.css"
     ],
-    "file": "assets/Login-bc013192.js",
+    "file": "assets/Login-85415a8e.js",
     "imports": [
       "index.html",
-      "_EMTTitle-f0715a4a.js"
+      "_EMTTitle-5ec395d4.js"
     ],
     "isDynamicEntry": true,
     "src": "src/views/pages/admin/auth/Login.vue"
   },
   "src/views/pages/admin/auth/Registration.vue": {
-    "file": "assets/Registration-6c98129e.js",
+    "file": "assets/Registration-c806dbec.js",
     "imports": [
       "index.html"
     ],
@@ -215,36 +214,21 @@
     "src": "src/views/pages/admin/auth/Registration.vue"
   },
   "src/views/pages/admin/dashboard/ManageContent.css": {
-    "file": "assets/ManageContent-d4a07664.css",
+    "file": "assets/ManageContent-42ecac73.css",
     "src": "src/views/pages/admin/dashboard/ManageContent.css"
   },
   "src/views/pages/admin/dashboard/ManageContent.vue": {
     "css": [
-      "assets/ManageContent-d4a07664.css"
+      "assets/ManageContent-42ecac73.css"
     ],
-    "file": "assets/ManageContent-75c152ea.js",
+    "file": "assets/ManageContent-1160df58.js",
     "imports": [
       "index.html",
-      "_AppStorage-f0e0e685.js",
+      "_AppStorage-59a68013.js",
       "_Url-4d04c3c7.js"
     ],
     "isDynamicEntry": true,
     "src": "src/views/pages/admin/dashboard/ManageContent.vue"
-  },
-  "src/views/pages/admin/dashboard/StudentDetail.css": {
-    "file": "assets/StudentDetail-dc8f1baf.css",
-    "src": "src/views/pages/admin/dashboard/StudentDetail.css"
-  },
-  "src/views/pages/admin/dashboard/StudentDetail.vue": {
-    "css": [
-      "assets/StudentDetail-dc8f1baf.css"
-    ],
-    "file": "assets/StudentDetail-bdc79e2f.js",
-    "imports": [
-      "index.html"
-    ],
-    "isDynamicEntry": true,
-    "src": "src/views/pages/admin/dashboard/StudentDetail.vue"
   },
   "src/views/pages/admin/dashboard/editContent.css": {
     "file": "assets/editContent-662051d9.css",
@@ -254,10 +238,10 @@
     "css": [
       "assets/editContent-662051d9.css"
     ],
-    "file": "assets/editContent-fbe0d83a.js",
+    "file": "assets/editContent-e0388520.js",
     "imports": [
       "index.html",
-      "_AppStorage-f0e0e685.js"
+      "_AppStorage-59a68013.js"
     ],
     "isDynamicEntry": true,
     "src": "src/views/pages/admin/dashboard/editContent.vue"
@@ -270,10 +254,10 @@
     "css": [
       "assets/GetStarted-26eb76de.css"
     ],
-    "file": "assets/GetStarted-1812bfc6.js",
+    "file": "assets/GetStarted-a3265134.js",
     "imports": [
       "index.html",
-      "_EMTTitle-f0715a4a.js"
+      "_EMTTitle-5ec395d4.js"
     ],
     "isDynamicEntry": true,
     "src": "src/views/pages/user/auth/GetStarted.vue"
@@ -289,9 +273,9 @@
     "css": [
       "assets/Landing-97de1607.css"
     ],
-    "file": "assets/Landing-ef867992.js",
+    "file": "assets/Landing-afefb459.js",
     "imports": [
-      "_EMTTitle-f0715a4a.js",
+      "_EMTTitle-5ec395d4.js",
       "index.html"
     ],
     "isDynamicEntry": true,
@@ -305,9 +289,9 @@
     "css": [
       "assets/Menu-9b8f8512.css"
     ],
-    "file": "assets/Menu-634a75ef.js",
+    "file": "assets/Menu-13e47e1e.js",
     "imports": [
-      "_EMTTitle-f0715a4a.js",
+      "_EMTTitle-5ec395d4.js",
       "index.html",
       "_Url-4d04c3c7.js"
     ],
@@ -325,7 +309,7 @@
     "css": [
       "assets/Play-fd7d41b8.css"
     ],
-    "file": "assets/Play-61eadbd7.js",
+    "file": "assets/Play-402d78e0.js",
     "imports": [
       "_Url-4d04c3c7.js",
       "index.html"
