@@ -1,2 +1,0 @@
-import{_ as n,o as _,c as a,f as s,h as e,H as o}from"./main-052e57a2.js";const r={},c={class:"g-title-style text-center"};function l(t,d){return _(),a("div",c,[s("h3",null,[e(" E-Modul Terintegrasi "),o(t.$slots,"appShortName",{},()=>[e(" SEAFOD ")],!0)]),s("p",null,[e(" ( "),o(t.$slots,"appName",{},()=>[e(" Sex Education For Children ")],!0),e(" ) ")])])}const i=n(r,[["render",l],["__scopeId","data-v-7371e037"]]);export{i as _};
-//# sourceMappingURL=EMTTitle-2d80a0c8.js.map
