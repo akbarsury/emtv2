@@ -180,7 +180,7 @@ export default defineConfig({
   },
   //////
   preview: {
-    port: 3081
+    port: 3032
   },
   //////
   resolve: {
