@@ -1,10 +1,28 @@
+<template>
+  <div class="app">
+    <router-view v-slot="{ Component }">
+      <transition name="fade">
+        <ComponentsSplash v-if="splashScreen && appStore.loadedApp.value" />
+        <component
+          :is="Component"
+          v-else-if="!splashScreen && appStore.loadedApp.value"
+        />
+      </transition>
+    </router-view>
+  </div>
+</template>
+
 <script lang="ts" setup>
 // import menuSoundSfx from "@a/sound/menu.mp3";
+
+const appStore = AppStore();
 
 useHead({
   title: "SEAFOD",
   titleTemplate: (title: any) =>
-    `${title === "SEAFOD" ? title : title + " - SEAFOD"} | E-Module Terintegrasi`,
+    `${
+      title === "SEAFOD" ? title : title + " - SEAFOD"
+    } | E-Module Terintegrasi`,
   meta: [
     {
       charset: "UTF-8",
@@ -103,25 +121,25 @@ useHead({
 //// App starting
 const devMode = ref(import.meta.env.DEV);
 const appName = ref("seafod");
-const router = useRouter()
+const router = useRouter();
 
 const splashScreen = ref(true);
 
 if (!devMode) {
   setTimeout(() => {
-    splashScreen.value = false
+    splashScreen.value = false;
   }, 8000);
 } else {
   setTimeout(() => {
-    splashScreen.value = false
+    splashScreen.value = false;
   }, 500);
 }
 
 router.isReady().then(() => {
   AppStore()
     .loadApp(appName.value)
-    .then(() => { });
-})
+    .then(() => {});
+});
 
 // const menuSound = reactive({
 //   userConfigPlayingMenuSound: true,
@@ -133,8 +151,6 @@ router.isReady().then(() => {
 //   stop: stopMenuSound,
 //   isPlaying: isPlayingMenuSound,
 // } = useSound(menuSoundSfx, { interrupt: true, volume: menuSound.volume });
-
-
 
 // router.afterEach((to, from) => {
 //   playMenuSound();
@@ -164,19 +180,6 @@ router.isReady().then(() => {
 //     stopMenuSound();
 //   }
 // });
-
 </script>
-
-<template>
-  <div class="app">
-    <router-view v-slot="{ Component }">
-      <transition name="fade">
-        <ComponentsSplash v-if="splashScreen && AppStore().loadedApp.value
-          " />
-        <component :is="Component" v-else-if="!splashScreen && AppStore().loadedApp.value" />
-      </transition>
-    </router-view>
-  </div>
-</template>
 
 <style scoped></style>

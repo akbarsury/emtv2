@@ -1,16 +1,29 @@
 <template>
   <div class="d-flex">
-    <div class="col-12 table-wrapper" v-if="AppStore().appCacheData[`${AppStore().activeContent.data.name}`] &&
-      Object.keys(route.query).length <= 0
-      ">
-      <div class="container-fluid" v-if="Object(AppStore().appCacheData[`${AppStore().activeContent.data.name}`]
-          .subContent)[
-        `${AppStore().appCacheData[`${AppStore().activeContent.data.name}`]
-          .lastSelectedSubContent
-        }`
-        ]
-        ">
-        <table class="aplication-content-table table table-bordered table-hover table-sm border-secondary rounded-5">
+    <div
+      class="col-12 table-wrapper"
+      v-if="
+        appStore.appCacheData[`${appStore.activeContent.data.name}`] &&
+        Object.keys(route.query).length <= 0
+      "
+    >
+      <div
+        class="container-fluid"
+        v-if="
+          Object(
+            appStore.appCacheData[`${appStore.activeContent.data.name}`]
+              .subContent
+          )[
+            `${
+              appStore.appCacheData[`${appStore.activeContent.data.name}`]
+                .lastSelectedSubContent
+            }`
+          ]
+        "
+      >
+        <table
+          class="aplication-content-table table table-bordered table-hover table-sm border-secondary rounded-5"
+        >
           <thead>
             <tr class="table-primary text-center text-capitalize text-nowrap">
               <th class="fw-bolder" scope="col">nomor Halaman</th>
@@ -19,16 +32,19 @@
             </tr>
           </thead>
           <tbody>
-            <tr class="text-lowercase text-nowrap" v-for="(page, index) in 
-    Object(AppStore().appCacheData[
-        `${AppStore().activeContent.data.name}`
-      ].subContent)[
-        `${AppStore().appCacheData[
-          `${AppStore().activeContent.data.name}`
-        ].lastSelectedSubContent
-        }`
-      ].page
-  " :key="index">
+            <tr
+              class="text-lowercase text-nowrap"
+              v-for="(page, index) in Object(
+                appStore.appCacheData[`${appStore.activeContent.data.name}`]
+                  .subContent
+              )[
+                `${
+                  appStore.appCacheData[`${appStore.activeContent.data.name}`]
+                    .lastSelectedSubContent
+                }`
+              ].page"
+              :key="index"
+            >
               <th class="text-center" scope="row">
                 {{ Number(index) + 1 }}
               </th>
@@ -42,31 +58,53 @@
                     >
                       edit nama halaman
                     </button> -->
-                    <button class="col-auto button-style small bg-secondary" style="width: fit-content" @click="editPage({
-                      pageNumber: Number(index) + 1,
-                      id: Object.entries(Object(page))[0][0],
-                      ...Object(Object.entries(Object(page))[0][1])
-                    })
-                      ">
+                    <button
+                      class="col-auto button-style small bg-secondary"
+                      style="width: fit-content"
+                      @click="
+                        editPage({
+                          pageNumber: Number(index) + 1,
+                          id: Object.entries(Object(page))[0][0],
+                          ...Object(Object.entries(Object(page))[0][1]),
+                        })
+                      "
+                    >
                       edit halaman
                     </button>
-                    <button class="col-auto button-style small bg-danger text-light" style="width: fit-content"
-                      @click="deletePage(Number(index), Object(Object.entries(Object(page))[0][1]).name)">
+                    <button
+                      class="col-auto button-style small bg-danger text-light"
+                      style="width: fit-content"
+                      @click="
+                        deletePage(
+                          Number(index),
+                          Object(Object.entries(Object(page))[0][1]).name
+                        )
+                      "
+                    >
                       hapus
                     </button>
                   </div>
                 </div>
               </td>
             </tr>
-            <tr v-if="Object(AppStore().appCacheData[`${AppStore().activeContent.data.name}`]
-                .subContent)[
-                `${AppStore().appCacheData[
-                  `${AppStore().activeContent.data.name}`
-                ].lastSelectedSubContent
-                }`
-              ].page.length <= 0
-              ">
-              <td class="text-center text-danger fw-bolder" scope="row" colspan="5">
+            <tr
+              v-if="
+                Object(
+                  appStore.appCacheData[`${appStore.activeContent.data.name}`]
+                    .subContent
+                )[
+                  `${
+                    appStore.appCacheData[`${appStore.activeContent.data.name}`]
+                      .lastSelectedSubContent
+                  }`
+                ].page.length <= 0
+              "
+            >
+              <td
+                class="text-center text-danger fw-bolder"
+                scope="row"
+                colspan="5"
+              >
                 Tidak ada halaman
               </td>
             </tr>
@@ -74,7 +112,9 @@
         </table>
       </div>
       <div class="container-fluid" v-else>
-        <span class="d-block bg-danger text-center text-light rounded-4 p-2">tidak ada sub konten dipilih</span>
+        <span class="d-block bg-danger text-center text-light rounded-4 p-2"
+          >tidak ada sub konten dipilih</span
+        >
       </div>
     </div>
     <router-view v-else />
@@ -84,13 +124,16 @@
 <script setup lang="ts">
 const router = useRouter();
 const route = useRoute();
+
+const appStore = AppStore();
+
 const editPage = (pageData: any) => {
   if (pageData.type === "delta") {
     router.push({
       name: "dashboard-edit-content",
       query: {
         sub: String(
-          AppStore().appCacheData[`${AppStore().activeContent.data.name}`]
+          appStore.appCacheData[`${appStore.activeContent.data.name}`]
             .lastSelectedSubContent
         ),
         page: pageData.pageNumber,
@@ -101,7 +144,7 @@ const editPage = (pageData: any) => {
 const deletePage = (id: number, title: string) => {
   const confirmDeletePage = confirm(`Yakin menghapus halaman ${title}?`);
   if (confirmDeletePage) {
-    AppStore().deletePage(id);
+    appStore.deletePage(id);
   }
 };
 </script>

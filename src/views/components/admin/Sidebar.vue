@@ -2,7 +2,7 @@
   <aside>
     <div class="d-flex flex-column p-2">
       <router-link
-        v-for="(menuLink, key) in AppStore().appData.menu"
+        v-for="(menuLink, key) in appStore.appData.menu"
         :key="key"
         :to="{
           name: 'dashboard-manage-content',
@@ -23,7 +23,9 @@
   </aside>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const appStore = AppStore();
+</script>
 
 <style scoped lang="scss">
 aside {

@@ -339,21 +339,13 @@ declare global {
 import { UnwrapRef } from 'vue'
 declare module 'vue' {
   interface ComponentCustomProperties {
-    readonly Analytics: UnwrapRef<typeof import('./firebase/Config')['Analytics']>
-    readonly AppDB: UnwrapRef<typeof import('./firebase/AppDB')['AppDB']>
-    readonly AppStorage: UnwrapRef<typeof import('./firebase/AppStorage')['AppStorage']>
-    readonly AppStore: UnwrapRef<typeof import('./stores/AppStore')['default']>
-    readonly Authentication: UnwrapRef<typeof import('./firebase/Config')['Authentication']>
     readonly Delta: UnwrapRef<typeof import('@vueup/vue-quill')['Delta']>
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
-    readonly Firestore: UnwrapRef<typeof import('./firebase/Config')['Firestore']>
     readonly GoogleAuthProvider: UnwrapRef<typeof import('firebase/auth')['GoogleAuthProvider']>
     readonly ImageUploader: UnwrapRef<typeof import('quill-image-uploader')['ImageUploader']>
     readonly Quill: UnwrapRef<typeof import('@vueup/vue-quill')['Quill']>
     readonly QuillDeltaToHtmlConverter: UnwrapRef<typeof import('quill-delta-to-html')['QuillDeltaToHtmlConverter']>
-    readonly UserStore: UnwrapRef<typeof import('./stores/UserStore')['default']>
     readonly addDoc: UnwrapRef<typeof import('firebase/firestore')['addDoc']>
-    readonly appAuth: UnwrapRef<typeof import('./firebase/AppAuth')['appAuth']>
     readonly arrayRemove: UnwrapRef<typeof import('firebase/firestore')['arrayRemove']>
     readonly arrayUnion: UnwrapRef<typeof import('firebase/firestore')['arrayUnion']>
     readonly asyncComputed: UnwrapRef<typeof import('@vueuse/core')['asyncComputed']>
@@ -430,9 +422,6 @@ declare module 'vue' {
     readonly promptForUserCredentials: UnwrapRef<typeof import('firebase/auth')['promptForCredentials']>
     readonly provide: UnwrapRef<typeof import('vue')['provide']>
     readonly query: UnwrapRef<typeof import('firebase/firestore')['query']>
-    readonly quillModules: UnwrapRef<typeof import('./helpers/Quill')['quillModules']>
-    readonly quillOptions: UnwrapRef<typeof import('./helpers/Quill')['quillOptions']>
-    readonly quillToolbars: UnwrapRef<typeof import('./helpers/Quill')['quillToolbars']>
     readonly reactify: UnwrapRef<typeof import('@vueuse/core')['reactify']>
     readonly reactifyObject: UnwrapRef<typeof import('@vueuse/core')['reactifyObject']>
     readonly reactive: UnwrapRef<typeof import('vue')['reactive']>
@@ -460,7 +449,6 @@ declare module 'vue' {
     readonly signOut: UnwrapRef<typeof import('firebase/auth')['signOut']>
     readonly sref: UnwrapRef<typeof import('firebase/storage')['ref']>
     readonly storage: UnwrapRef<typeof import('firebase/storage')['getStorage']>
-    readonly stringToUrlConverter: UnwrapRef<typeof import('./helpers/Url')['stringToUrlConverter']>
     readonly syncRef: UnwrapRef<typeof import('@vueuse/core')['syncRef']>
     readonly syncRefs: UnwrapRef<typeof import('@vueuse/core')['syncRefs']>
     readonly templateRef: UnwrapRef<typeof import('@vueuse/core')['templateRef']>
@@ -483,7 +471,6 @@ declare module 'vue' {
     readonly updateDoc: UnwrapRef<typeof import('firebase/firestore')['updateDoc']>
     readonly uploadBytes: UnwrapRef<typeof import('firebase/storage')['uploadBytes']>
     readonly uploadString: UnwrapRef<typeof import('firebase/storage')['uploadString']>
-    readonly urlToStringConverter: UnwrapRef<typeof import('./helpers/Url')['urlToStringConverter']>
     readonly useActiveElement: UnwrapRef<typeof import('@vueuse/core')['useActiveElement']>
     readonly useAnimate: UnwrapRef<typeof import('@vueuse/core')['useAnimate']>
     readonly useArrayDifference: UnwrapRef<typeof import('@vueuse/core')['useArrayDifference']>
@@ -668,21 +655,13 @@ declare module 'vue' {
 }
 declare module '@vue/runtime-core' {
   interface ComponentCustomProperties {
-    readonly Analytics: UnwrapRef<typeof import('./firebase/Config')['Analytics']>
-    readonly AppDB: UnwrapRef<typeof import('./firebase/AppDB')['AppDB']>
-    readonly AppStorage: UnwrapRef<typeof import('./firebase/AppStorage')['AppStorage']>
-    readonly AppStore: UnwrapRef<typeof import('./stores/AppStore')['default']>
-    readonly Authentication: UnwrapRef<typeof import('./firebase/Config')['Authentication']>
     readonly Delta: UnwrapRef<typeof import('@vueup/vue-quill')['Delta']>
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
-    readonly Firestore: UnwrapRef<typeof import('./firebase/Config')['Firestore']>
     readonly GoogleAuthProvider: UnwrapRef<typeof import('firebase/auth')['GoogleAuthProvider']>
     readonly ImageUploader: UnwrapRef<typeof import('quill-image-uploader')['ImageUploader']>
     readonly Quill: UnwrapRef<typeof import('@vueup/vue-quill')['Quill']>
     readonly QuillDeltaToHtmlConverter: UnwrapRef<typeof import('quill-delta-to-html')['QuillDeltaToHtmlConverter']>
-    readonly UserStore: UnwrapRef<typeof import('./stores/UserStore')['default']>
     readonly addDoc: UnwrapRef<typeof import('firebase/firestore')['addDoc']>
-    readonly appAuth: UnwrapRef<typeof import('./firebase/AppAuth')['appAuth']>
     readonly arrayRemove: UnwrapRef<typeof import('firebase/firestore')['arrayRemove']>
     readonly arrayUnion: UnwrapRef<typeof import('firebase/firestore')['arrayUnion']>
     readonly asyncComputed: UnwrapRef<typeof import('@vueuse/core')['asyncComputed']>
@@ -759,9 +738,6 @@ declare module '@vue/runtime-core' {
     readonly promptForUserCredentials: UnwrapRef<typeof import('firebase/auth')['promptForCredentials']>
     readonly provide: UnwrapRef<typeof import('vue')['provide']>
     readonly query: UnwrapRef<typeof import('firebase/firestore')['query']>
-    readonly quillModules: UnwrapRef<typeof import('./helpers/Quill')['quillModules']>
-    readonly quillOptions: UnwrapRef<typeof import('./helpers/Quill')['quillOptions']>
-    readonly quillToolbars: UnwrapRef<typeof import('./helpers/Quill')['quillToolbars']>
     readonly reactify: UnwrapRef<typeof import('@vueuse/core')['reactify']>
     readonly reactifyObject: UnwrapRef<typeof import('@vueuse/core')['reactifyObject']>
     readonly reactive: UnwrapRef<typeof import('vue')['reactive']>
@@ -789,7 +765,6 @@ declare module '@vue/runtime-core' {
     readonly signOut: UnwrapRef<typeof import('firebase/auth')['signOut']>
     readonly sref: UnwrapRef<typeof import('firebase/storage')['ref']>
     readonly storage: UnwrapRef<typeof import('firebase/storage')['getStorage']>
-    readonly stringToUrlConverter: UnwrapRef<typeof import('./helpers/Url')['stringToUrlConverter']>
     readonly syncRef: UnwrapRef<typeof import('@vueuse/core')['syncRef']>
     readonly syncRefs: UnwrapRef<typeof import('@vueuse/core')['syncRefs']>
     readonly templateRef: UnwrapRef<typeof import('@vueuse/core')['templateRef']>
@@ -812,7 +787,6 @@ declare module '@vue/runtime-core' {
     readonly updateDoc: UnwrapRef<typeof import('firebase/firestore')['updateDoc']>
     readonly uploadBytes: UnwrapRef<typeof import('firebase/storage')['uploadBytes']>
     readonly uploadString: UnwrapRef<typeof import('firebase/storage')['uploadString']>
-    readonly urlToStringConverter: UnwrapRef<typeof import('./helpers/Url')['urlToStringConverter']>
     readonly useActiveElement: UnwrapRef<typeof import('@vueuse/core')['useActiveElement']>
     readonly useAnimate: UnwrapRef<typeof import('@vueuse/core')['useAnimate']>
     readonly useArrayDifference: UnwrapRef<typeof import('@vueuse/core')['useArrayDifference']>

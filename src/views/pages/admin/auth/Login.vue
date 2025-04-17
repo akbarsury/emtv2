@@ -1,5 +1,6 @@
 <script setup lang="ts">
-
+const userStore = UserStore();
+const appStore = AppStore();
 </script>
 
 <template>
@@ -49,19 +50,28 @@
                 />
                 </span>
             </button> -->
-            <button class="button-style bg-danger text-white fw-bolder shadow p-2" @click="AppStore().tryToLogin()"
-              :disabled="UserStore().userStatus.tryToAuthenticated">
-              <div class="d-flex justify-content-center align-items-center gap-2">
+            <button
+              class="button-style bg-danger text-white fw-bolder shadow p-2"
+              @click="appStore.tryToLogin()"
+              :disabled="userStore.userStatus.tryToAuthenticated"
+            >
+              <div
+                class="d-flex justify-content-center align-items-center gap-2"
+              >
                 <i class="fa-brands fa-google fs-2" />
-                <span>
-                  Masuk dengan Google
-                </span>
-                <ComponentsLoader v-if="UserStore().userStatus.tryToAuthenticated" />
+                <span> Masuk dengan Google </span>
+                <ComponentsLoader
+                  v-if="userStore.userStatus.tryToAuthenticated"
+                />
               </div>
             </button>
-            <div :class="[`p-1 px-3 rounded text-light text-center bg-warning border border-dark border-2`]"
-              v-if="AppStore().appData.error.admin.status">
-              {{ AppStore().appData.error.admin.message }}
+            <div
+              :class="[
+                `p-1 px-3 rounded text-light text-center bg-warning border border-dark border-2`,
+              ]"
+              v-if="appStore.appData.error.admin.status"
+            >
+              {{ appStore.appData.error.admin.message }}
             </div>
           </div>
         </div>

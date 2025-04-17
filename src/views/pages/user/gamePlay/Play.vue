@@ -3,57 +3,107 @@ import playingHeaderIcon from "@a/images/icon/writing.png";
 
 const route = useRoute();
 const router = useRouter();
+
+const appStore = AppStore();
+
 const content = urlToStringConverter(String(route.params.playingContent));
 const sub = urlToStringConverter(String(route.query.sub));
-const subContent: { name?: any, pages?: any } = reactive({
-  name: Object(AppStore().appCacheData[`${content}`].subContent)[`${sub}`]?.name,
-  pages: Object(AppStore().appCacheData[`${content}`].subContent)[`${sub}`]?.page
-})
-AppStore().appData.subContentActive = subContent
+const subContent: { name?: any; pages?: any } = reactive({
+  name: Object(appStore.appCacheData[`${content}`].subContent)[`${sub}`]?.name,
+  pages: Object(appStore.appCacheData[`${content}`].subContent)[`${sub}`]?.page,
+});
+appStore.appData.subContentActive = subContent;
 
-const loaded = ref(false)
+const loaded = ref(false);
 setTimeout(() => {
-  loaded.value = true
+  loaded.value = true;
 }, 1000);
 
 router.afterEach(() => {
-  loaded.value = false
+  loaded.value = false;
   setTimeout(() => {
-    loaded.value = true
+    loaded.value = true;
   }, 1000);
-})
-
+});
 </script>
 
 <template>
   <div>
     <div class="content d-flex flex-column gap-4" v-if="loaded">
-      <div class="playing-header mb-3"
-        v-if="(urlToStringConverter(String(useRoute().params.playingContent)) === 'pembelajaran' && useRoute().query.evaluation) || (urlToStringConverter(String(useRoute().params.playingContent)) === 'evaluasi akhir')">
-        <div class="playing-header-icon" :style="{ backgroundImage: `url(${playingHeaderIcon})` }"></div>
-        <h1 class="h5 d-inline-block title-style text-uppercase fw-bolder mb-3 p-2 px-4">
-          {{ subContent?.name ? subContent?.name : AppStore().activeContent.data.name }}
+      <div
+        class="playing-header mb-3"
+        v-if="
+          (urlToStringConverter(String(useRoute().params.playingContent)) ===
+            'pembelajaran' &&
+            useRoute().query.evaluation) ||
+          urlToStringConverter(String(useRoute().params.playingContent)) ===
+            'evaluasi akhir'
+        "
+      >
+        <div
+          class="playing-header-icon"
+          :style="{ backgroundImage: `url(${playingHeaderIcon})` }"
+        ></div>
+        <h1
+          class="h5 d-inline-block title-style text-uppercase fw-bolder mb-3 p-2 px-4"
+        >
+          {{
+            subContent?.name
+              ? subContent?.name
+              : appStore.activeContent.data.name
+          }}
         </h1>
       </div>
       <PagesUserGamePlayEvaluation
         class="playing animate__animated animate__fadeInUpBig d-flex flex-column justify-content-center shadow rounded-9 p-4 m-2"
-        v-if="urlToStringConverter(String(useRoute().params.playingContent)) === 'pembelajaran' && useRoute().query.evaluation" />
+        v-if="
+          urlToStringConverter(String(useRoute().params.playingContent)) ===
+            'pembelajaran' && useRoute().query.evaluation
+        "
+      />
       <PagesUserGamePlayFinalEvaluation
         class="playing animate__animated animate__fadeInUpBig d-flex flex-column justify-content-center shadow rounded-9 p-4 m-2"
-        v-else-if="urlToStringConverter(String(useRoute().params.playingContent)) === 'evaluasi akhir'" />
+        v-else-if="
+          urlToStringConverter(String(useRoute().params.playingContent)) ===
+          'evaluasi akhir'
+        "
+      />
       <div
         class="playing animate__animated animate__fadeInUpBig d-flex flex-column justify-content-center shadow rounded-9 p-4 m-2"
-        v-else>
+        v-else
+      >
         <div class="playing-header mb-3">
-          <div class="playing-header-icon" :style="{ backgroundImage: `url(${playingHeaderIcon})` }"></div>
-          <h1 class="h5 d-inline-block title-style text-uppercase fw-bolder mb-3 p-2 px-4">
+          <div
+            class="playing-header-icon"
+            :style="{ backgroundImage: `url(${playingHeaderIcon})` }"
+          ></div>
+          <h1
+            class="h5 d-inline-block title-style text-uppercase fw-bolder mb-3 p-2 px-4"
+          >
             {{ subContent.name }}
           </h1>
         </div>
         <div class="playing-content d-flex flex-column">
-          <div v-if="Object(Object.values(subContent.pages[`${Number(route.query.page) - 1}`])[0]).type === 'delta'"
-            v-html="AppStore().quilToHTML({ ops: Object(Object.values(subContent.pages[`${Number(route.query.page) - 1}`])[0]).data.ops }).convert()">
-          </div>
+          <div
+            v-if="
+              Object(
+                Object.values(
+                  subContent.pages[`${Number(route.query.page) - 1}`]
+                )[0]
+              ).type === 'delta'
+            "
+            v-html="
+              appStore
+                .quilToHTML({
+                  ops: Object(
+                    Object.values(
+                      subContent.pages[`${Number(route.query.page) - 1}`]
+                    )[0]
+                  ).data.ops,
+                })
+                .convert()
+            "
+          ></div>
         </div>
       </div>
     </div>

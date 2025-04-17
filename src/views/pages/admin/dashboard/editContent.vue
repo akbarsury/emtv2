@@ -1,5 +1,8 @@
 <template>
-  <div class="d-flex flex-column gap-4 p-4" v-if="AppStore().activeContent.data.name">
+  <div
+    class="d-flex flex-column gap-4 p-4"
+    v-if="appStore.activeContent.data.name"
+  >
     <div class="container-fluid border-secondary border-bottom py-2">
       <div class="row align-items-center gap-2">
         <div class="col-auto p-1">
@@ -9,7 +12,7 @@
             </span>
           </div>
           <span class="text-uppercase badge badge-secondary">
-            {{ AppStore().activeContent.data.name }}
+            {{ appStore.activeContent.data.name }}
           </span>
         </div>
         <div class="col-auto p-1">
@@ -19,9 +22,7 @@
             </span>
           </div>
           <span class="text-uppercase badge badge-secondary">
-            {{
-              content.name
-            }}
+            {{ content.name }}
           </span>
         </div>
         <div class="col-auto p-1">
@@ -33,18 +34,25 @@
           <span class="text-uppercase badge badge-secondary">
             {{
               `${Number(useRoute().query.page)} - ` +
-              Object(Object.values(Object(
-                Object.entries(
-                  Object(AppStore().appCacheData[
-                    `${AppStore().activeContent.data.name}`
-                  ].subContent)[
-                    `${AppStore().appCacheData[
-                      `${AppStore().activeContent.data.name}`
-                    ].lastSelectedSubContent
-                    }`
-                  ].page
-                )[Number(useRoute().query.page) - 1][1]
-              ))[0]).name
+              Object(
+                Object.values(
+                  Object(
+                    Object.entries(
+                      Object(
+                        appStore.appCacheData[
+                          `${appStore.activeContent.data.name}`
+                        ].subContent
+                      )[
+                        `${
+                          appStore.appCacheData[
+                            `${appStore.activeContent.data.name}`
+                          ].lastSelectedSubContent
+                        }`
+                      ].page
+                    )[Number(useRoute().query.page) - 1][1]
+                  )
+                )[0]
+              ).name
             }}
           </span>
         </div>
@@ -65,7 +73,6 @@
         <components-quill-editor :quillContent="quillContent" />
       </div>
     </div>
-
   </div>
   <div class="p-4" v-else>
     <span class="loader" />
@@ -73,19 +80,26 @@
 </template>
 
 <script setup lang="ts">
+const appStore = AppStore();
+
 const content = ref(
-  Object(Object.values(Object(
-    Object.entries(
-      Object(AppStore().appCacheData[
-        `${AppStore().activeContent.data.name}`
-      ].subContent)[
-        `${AppStore().appCacheData[
-          `${AppStore().activeContent.data.name}`
-        ].lastSelectedSubContent
-        }`
-      ].page
-    )[Number(useRoute().query.page) - 1][1]
-  ))[0])
+  Object(
+    Object.values(
+      Object(
+        Object.entries(
+          Object(
+            appStore.appCacheData[`${appStore.activeContent.data.name}`]
+              .subContent
+          )[
+            `${
+              appStore.appCacheData[`${appStore.activeContent.data.name}`]
+                .lastSelectedSubContent
+            }`
+          ].page
+        )[Number(useRoute().query.page) - 1][1]
+      )
+    )[0]
+  )
 );
 
 const quillContent = reactive({

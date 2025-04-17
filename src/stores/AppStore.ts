@@ -25,7 +25,7 @@ export type _AppChacheContent = {
 }
 
 
-const appStore = createGlobalState(() => {
+const AppStore = createGlobalState(() => {
     const splashScreenStatus = ref(true)
 
     const loadedApp = ref(false);
@@ -274,9 +274,7 @@ const appStore = createGlobalState(() => {
         appData,
         modal,
         allStudent,
-
         tryToLogin,
-
         saveChanged,
         activeContent,
         appCacheData,
@@ -285,9 +283,8 @@ const appStore = createGlobalState(() => {
         deleteSubContent,
         deletePage,
         updatePageContent,
-
         quilToHTML
     }
 })
 
-export default appStore
+export default AppStore;

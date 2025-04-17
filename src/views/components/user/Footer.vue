@@ -1,60 +1,104 @@
 <script setup lang="ts">
 const router = useRouter();
 const route = useRoute();
-const subContent: any = AppStore().appData.subContentActive
-const pageLength = ref()
+
+const appStore = AppStore();
+
+const subContent: any = appStore.appData.subContentActive;
+const pageLength = ref();
 if (route.meta.playing) {
-  pageLength.value = subContent?.pages.length
+  pageLength.value = subContent?.pages.length;
 }
 //////
-
 </script>
 
 <template>
   <footer class="animate__animated animate__zoomIn p-0">
     <div class="container" v-if="route.name === 'play'">
-      <div class=" d-flex justify-content-around gap-5 px-5">
+      <div class="d-flex justify-content-around gap-5 px-5">
         <button
-          v-if="Number(route.query.page) < Number(Object(AppStore().appData.subContentActive)?.pages?.length) && Number(Object(AppStore().appData.subContentActive).pages?.length) !== 1"
-          class="footer-select-content button-style bg-warning text-light px-auto" @click="router.back()">
+          v-if="
+            Number(route.query.page) <
+              Number(
+                Object(appStore.appData.subContentActive)?.pages?.length
+              ) &&
+            Number(Object(appStore.appData.subContentActive).pages?.length) !==
+              1
+          "
+          class="footer-select-content button-style bg-warning text-light px-auto"
+          @click="router.back()"
+        >
           kembali
         </button>
-        <button v-if="Number(route.query.page) < Number(Object(AppStore().appData.subContentActive)?.pages?.length)"
-          class="footer-select-content button-style bg-primary text-light px-auto" @click="router.push({
+        <button
+          v-if="
+            Number(route.query.page) <
+            Number(Object(appStore.appData.subContentActive)?.pages?.length)
+          "
+          class="footer-select-content button-style bg-primary text-light px-auto"
+          @click="
+            router.push({
               query: {
                 sub: route.query.sub,
                 page: Number(route.query.page) + 1,
               },
             })
-            ">
+          "
+        >
           Lanjutkan
           <i class="fa-solid fa-chevrons-right" />
         </button>
         <button
-          v-if="Number(route.query.page) === Number(Object(AppStore().appData.subContentActive)?.pages?.length) && useRoute().params.playingContent !== 'pembelajaran'"
+          v-if="
+            Number(route.query.page) ===
+              Number(
+                Object(appStore.appData.subContentActive)?.pages?.length
+              ) && useRoute().params.playingContent !== 'pembelajaran'
+          "
           class="footer-select-content button-style bg-success text-light px-auto"
-          @click="router.go(-Number(route.query.page))">
+          @click="router.go(-Number(route.query.page))"
+        >
           selesai
         </button>
         <button
-          v-if="Number(route.query.page) === Number(Object(AppStore().appData.subContentActive)?.pages?.length) && useRoute().params.playingContent === 'pembelajaran'"
-          class="footer-select-content button-style bg-success text-light px-auto" @click="router.push({
+          v-if="
+            Number(route.query.page) ===
+              Number(
+                Object(appStore.appData.subContentActive)?.pages?.length
+              ) && useRoute().params.playingContent === 'pembelajaran'
+          "
+          class="footer-select-content button-style bg-success text-light px-auto"
+          @click="
+            router.push({
               query: {
-                evaluation: route.query.sub
-              }
-            })">
+                evaluation: route.query.sub,
+              },
+            })
+          "
+        >
           evaluasi
         </button>
         <button
-          v-if="(urlToStringConverter(String(useRoute().params.playingContent)) === 'pembelajaran' && useRoute().query.evaluation) || urlToStringConverter(String(useRoute().params.playingContent)) === 'evaluasi akhir'"
-          class="footer-select-content button-style bg-warning text-light px-auto" @click="router.push({
-              name: 'menu'
-            })">
+          v-if="
+            (urlToStringConverter(String(useRoute().params.playingContent)) ===
+              'pembelajaran' &&
+              useRoute().query.evaluation) ||
+            urlToStringConverter(String(useRoute().params.playingContent)) ===
+              'evaluasi akhir'
+          "
+          class="footer-select-content button-style bg-warning text-light px-auto"
+          @click="
+            router.push({
+              name: 'menu',
+            })
+          "
+        >
           kembali ke menu utama
         </button>
       </div>
       <div class="text-center" v-if="!useRoute().query.evaluation">
-        {{ route.query.page }} / {{ Object(AppStore().appData.subContentActive)?.pages?.length }}
+        {{ route.query.page }} /
+        {{ Object(appStore.appData.subContentActive)?.pages?.length }}
       </div>
     </div>
     <div class="content-footer">
@@ -62,16 +106,20 @@ if (route.meta.playing) {
         <div class="d-flex flex-row-reverse">
           <div class="col-auto">
             <div class="d-flex flex-column align-items-end gap-2">
-              <span :class="[
-                `class-module h4 text-uppercase`,
-                route.name !== `landing` ? `g-text-transparent` : ``,
-              ]
-                ">kelas v</span>
-              <span :class="[
+              <span
+                :class="[
+                  `class-module h4 text-uppercase`,
+                  route.name !== `landing` ? `g-text-transparent` : ``,
+                ]"
+                >kelas v</span
+              >
+              <span
+                :class="[
                   `class-thema-subthema h4 text-capitalize`,
                   route.name !== `landing` ? `g-text-transparent` : ``,
-                ]
-                ">tema 3 - subtema 1</span>
+                ]"
+                >tema 3 - subtema 1</span
+              >
             </div>
           </div>
         </div>
